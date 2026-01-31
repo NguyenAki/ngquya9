@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bình Định Beauty Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1E88E5',
+              secondary: '#FF7043',
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-gray-50">
+  <custom-header></custom-header>
+  
+  <main class="container mx-auto px-4 py-8">
+    <!-- Hero Section -->
+    <section class="hero-section mb-16">
+      <div class="relative h-96 rounded-2xl overflow-hidden shadow-xl">
+        <img src="http://static.photos/nature/1200x630/42" alt="Bình Định Landscape" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-8">
+          <div>
+            <h1 class="text-4xl md:text-5xl font-bold text-white mb-2">Khám phá Bình Định</h1>
+            <p class="text-xl text-white/90 max-w-2xl">Vùng đất của những bãi biển hoang sơ, di tích lịch sử và ẩm thực đặc sắc</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="mb-16">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h2 class="text-3xl font-bold text-primary mb-4">Giới thiệu về Bình Định</h2>
+          <p class="text-gray-700 mb-4">Bình Định là một tỉnh thuộc vùng Duyên hải Nam Trung Bộ Việt Nam, nổi tiếng với những bãi biển đẹp, di tích lịch sử và văn hóa đặc sắc.</p>
+          <p class="text-gray-700 mb-4">Nơi đây từng là kinh đô của vương quốc Chămpa cổ với tháp Chàm độc đáo, đồng thời là quê hương của người anh hùng dân tộc Quang Trung - Nguyễn Huệ.</p>
+          <div class="flex items-center space-x-4">
+            <div class="flex items-center text-secondary">
+              <i data-feather="map-pin" class="mr-2"></i>
+              <span>Duyên hải Nam Trung Bộ</span>
+            </div>
+            <div class="flex items-center text-secondary">
+              <i data-feather="users" class="mr-2"></i>
+              <span>~1.5 triệu dân</span>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-lg">
+          <img src="http://static.photos/travel/1024x576/23" alt="Bình Định Map" class="w-full h-auto">
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-primary mb-8 text-center">Điểm nổi bật của Bình Định</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="highlight-card">
+          <div class="highlight-icon bg-primary/10 text-primary">
+            <i data-feather="sun"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Bãi biển đẹp</h3>
+          <p class="text-gray-600">Bãi biển Quy Nhơn, Eo Gió, Ghềnh Ráng với cát trắng, nước trong xanh và cảnh quan hoang sơ.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon bg-secondary/10 text-secondary">
+            <i data-feather="home"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Di tích lịch sử</h3>
+          <p class="text-gray-600">Tháp Đôi, Tháp Bánh Ít, Bảo tàng Quang Trung - những di tích Chămpa và Tây Sơn độc đáo.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-icon bg-primary/10 text-primary">
+            <i data-feather="coffee"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Ẩm thực đặc sắc</h3>
+          <p class="text-gray-600">Bánh ít lá gai, bún chả cá, bánh xèo tôm nhảy - những món ngon không thể bỏ qua.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-bold text-primary mb-8 text-center">Hình ảnh Bình Định</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="gallery-item">
+          <img src="http://static.photos/nature/640x360/1" alt="Bình Định 1" class="rounded-lg shadow-md hover:shadow-xl transition-all">
+        </div>
+        <div class="gallery-item">
+          <img src="http://static.photos/travel/640x360/2" alt="Bình Định 2" class="rounded-lg shadow-md hover:shadow-xl transition-all">
+        </div>
+        <div class="gallery-item">
+          <img src="http://static.photos/cityscape/640x360/3" alt="Bình Định 3" class="rounded-lg shadow-md hover:shadow-xl transition-all">
+        </div>
+        <div class="gallery-item">
+          <img src="http://static.photos/food/640x360/4" alt="Bình Định 4" class="rounded-lg shadow-md hover:shadow-xl transition-all">
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section>
+      <h2 class="text-3xl font-bold text-primary mb-8 text-center">Nhóm 1</h2>
+      <div class="flex justify-center">
+        <div class="bg-white p-6 rounded-xl shadow-md max-w-md w-full text-center">
+          <h3 class="text-xl font-semibold mb-2">Nhóm phát triển</h3>
+          <p class="text-gray-600">Chúng tôi là nhóm yêu thích và muốn quảng bá vẻ đẹp của Bình Định đến với mọi người.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <custom-footer></custom-footer>
+
+  <script src="components/header.js"></script>
+  <script src="components/footer.js"></script>
+  <script src="script.js"></script>
+  <script>feather.replace();</script>
+</body>
+</html>
